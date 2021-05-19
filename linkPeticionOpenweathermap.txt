@@ -1,0 +1,1 @@
+https://api.openweathermap.org/data/2.5/weather?q=Buenos Aires&appid=7543a0a52f28b5ccf87dc01dd3fc36c8
