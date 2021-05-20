@@ -1,28 +1,32 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {
-    WiCloud,
     WiDayCloudy,
-    WiDayFog,
     WiDaySunny,
-    WiRain
+    WiRain,
+    WiSnow,
+    WiRaindrop,
+    WiThunderstorm
 } from 'react-icons/wi'
-
-
+// Weather conditions codes que nos da Open weather map
+// Thunderstorm Drizzle Snow Clear Clouds
 export const validValues = [
-    "cloud",
-    "cloudy",
-    "fog",
-    "sunny",
-    "rain"
+    "clouds",
+    "clear",
+    "rain",
+    "snow",
+    "drizzle",
+    "thunderstorm"
 ]
 
 const stateByName = {
-    cloud: WiCloud,
-    cloudy: WiDayCloudy,
-    fog: WiDayFog,
-    sunny: WiDaySunny,
+    clouds: WiDayCloudy,
+    clear: WiDaySunny,
     rain: WiRain,
+    snow: WiSnow,
+    drizzle: WiRaindrop,
+    thunderstorm: WiThunderstorm
+
 }
 
 const IconState = ({state}) => {

@@ -12,7 +12,7 @@ const cities = [
 test("CityList renders", async() => {
     // regla de las 3 AAA
 
-    const { findAllByRole } = render(<CityList cities={cities} />)
+    const { findAllByRole } = render(<CityList cities={cities} onClickCity={() => {} } />)
 
     const items = await findAllByRole("button")
 
